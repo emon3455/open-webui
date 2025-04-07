@@ -1187,13 +1187,13 @@ def validate_cors_origin(origin):
 # in your .env file depending on your frontend port, 5173 in this case.
 CORS_ALLOW_ORIGIN = os.environ.get(
     "CORS_ALLOW_ORIGIN",
-    "http://192.168.0.133:5173;http://192.168.0.133:8080"
+    "http://192.168.0.184:5173;http://192.168.0.184:8080"
 ).split(";")
 
 # Check if the origins are in the list and log a warning
 if (
-    "http://192.168.0.133:5173" in CORS_ALLOW_ORIGIN
-    or "http://192.168.0.133:8080" in CORS_ALLOW_ORIGIN
+    "http://192.168.0.184:5173" in CORS_ALLOW_ORIGIN
+    or "http://192.168.0.184:8080" in CORS_ALLOW_ORIGIN
 ):
     log.warning(
         "\n\nWARNING: CORS_ALLOW_ORIGIN includes a local or dev origin (e.g., 192.168.0.133 or ai.optimalmd.com) - NOT RECOMMENDED FOR PRODUCTION DEPLOYMENTS.\n"
