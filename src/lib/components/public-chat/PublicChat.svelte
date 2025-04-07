@@ -373,7 +373,7 @@
 					{:else}
 						<!-- Existing welcome screen content -->
 						<div class="text-center mb-2 ">
-							<div class="flex m-auto w-[50%] ">
+							<div class="flex m-auto  ">
 								<div class="flex m-auto  gap-2">
 									<img
 								src={selectedModel?.info?.meta?.profile_image_url || '/placeholder-logo.png'}
