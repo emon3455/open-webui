@@ -1419,7 +1419,7 @@ CORS_ALLOW_CUSTOM_SCHEME = os.environ.get("CORS_ALLOW_CUSTOM_SCHEME", "").split(
 
 if CORS_ALLOW_ORIGIN == ["http://localhost:5173"]:
     log.warning(
-        "\n\nWARNING: CORS_ALLOW_ORIGIN IS SET TO '*' - NOT RECOMMENDED FOR PRODUCTION DEPLOYMENTS.\n"
+        "\n\nWARNING: CORS_ALLOW_ORIGIN includes a local or dev origin (e.g., 192.168.0.133 or ai.optimalmd.com) - NOT RECOMMENDED FOR PRODUCTION DEPLOYMENTS.\n"
     )
 else:
     # You have to pick between a single wildcard or a list of origins.
